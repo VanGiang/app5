@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.12'
+gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '2.1'
+gem 'bcrypt-ruby', '3.0.1'
+gem 'pry'
+
 
 
 group :development, :test do
@@ -13,6 +16,11 @@ group :development, :test do
 
   gem 'rb-inotify', '0.8.8'
 end
+
+group :development do
+  gem 'annotate', '2.5.0'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -28,6 +36,7 @@ group :test do
   gem 'capybara', '1.1.2'
   gem 'rb-inotify', '0.8.8'
   gem 'libnotify', '0.5.9'
+  gem 'factory_girl_rails', '4.1.0'
 end 
 
 group :production do
